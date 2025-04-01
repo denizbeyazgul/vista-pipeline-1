@@ -31,7 +31,15 @@ To effectively merge heterogeneous data sources, the pipeline uses a **mid-fusio
 
 After fusion, a **Random Forest** classifier is trained on the combined feature space to **predict the type of cyberattack**.
 
-Random Forest was chosen for its robustness, ability to handle mixed feature types, and interpretability.
+Random Forest was chosen for its robustness, ability to handle mixed feature types, and interoperability.
 
-## Folder Structure
 
+## Model Explainability
+
+To enhance transparency and trust in the model's predictions, both **global and local explainability** techniques were applied using **SHAP (SHapley Additive exPlanations)**:
+
+- **Global SHAP:**  
+  Highlights which features are generally most influential in predicting multi-class attack types.
+
+- **Local SHAP:**  
+  Visualizes the contribution of each feature to individual predictions, enabling case-by-case attack investigation.
