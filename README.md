@@ -4,6 +4,8 @@
 
 **VISTA Pipeline 1** is a machine learning pipeline developed for cyber threat detection in Industrial IoT (IIoT) environments. This pipeline focuses on **multi-dataset integration and attack type prediction** using advanced data fusion and classification techniques.
 
+> ⚠️ **Note:** The code for the data fusion component (Autoencoder and Manifold Alignment) is **not included in this repository** as it is part of a private implementation.
+
 ## Datasets
 
 This pipeline integrates two publicly available Industrial IoT datasets:
@@ -23,7 +25,7 @@ To effectively merge heterogeneous data sources, the pipeline uses a **mid-fusio
 - **Manifold Alignment**:  
   Aligns the datasets in a common latent space to preserve statistical relationships across domains.
 
-This fusion enables meaningful comparison and integration of both datasets for joint analysis.
+> 🔒 While the fusion methodology is described here, the actual implementation code is proprietary and not shared in this repository.
 
 ## Model
 
